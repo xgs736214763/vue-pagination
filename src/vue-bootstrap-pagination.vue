@@ -20,7 +20,7 @@
                     <span aria-hidden="true">{{ config.nextText }}</span>
                 </span>
 
-                <a href="#" v-if="pagination.current_page < pagination.last_page" :aria-label="config.ariaNext" @click.prevent="changePage(pagination.current_page + 1)">
+                <a href="#" v-if="pagination.current_page < pagination.last_page" :aria-label="config.ariaNext" @click.prevent="changePage(parseInt(pagination.current_page) + 1)">
                     <span aria-hidden="true">{{ config.nextText }}</span>
                 </a>
             </li>
